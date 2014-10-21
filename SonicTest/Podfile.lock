@@ -1,0 +1,15 @@
+PODS:
+  - Sonic (0.0.1)
+
+DEPENDENCIES:
+  - Sonic
+  - Sonic (from `../`)
+
+EXTERNAL SOURCES:
+  Sonic:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Sonic: 906365ae04307ca5c81d41d8c84d479fcd0ad0fa
+
+COCOAPODS: 0.34.1

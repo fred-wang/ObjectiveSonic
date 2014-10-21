@@ -1,0 +1,9 @@
+platform :ios, "6.0"
+
+source "https://github.com/CocoaPods/Specs.git"
+
+pod "Sonic", :path => "../"
+
+target "SonicTest" do
+  pod "Sonic"
+end
