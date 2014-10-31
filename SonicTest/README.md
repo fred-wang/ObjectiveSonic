@@ -1,5 +1,5 @@
 SonicTest
-======
+=========
 
 This is a sample iOS application that uses the libsonic library and is similar
 to the Android application available in sonic-ndk.

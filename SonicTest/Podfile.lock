@@ -10,6 +10,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Sonic: 906365ae04307ca5c81d41d8c84d479fcd0ad0fa
+  Sonic: 3ee61df21d7aadf28fc442fc73bac0a158e199be
 
 COCOAPODS: 0.34.1

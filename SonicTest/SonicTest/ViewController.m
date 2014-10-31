@@ -73,15 +73,8 @@ float valueOfTextField(UITextField* textField)
     if (!sonic) {
         return;
     }
-    Byte* samples = malloc(kSamplesLength);
-    if (!samples) {
-        return;
-    }
-    Byte* modifiedSamples = malloc(kModifiedSamplesLength);
-    if (!modifiedSamples) {
-        free(samples);
-        return;
-    }
+    Byte samples[kSamplesLength];
+    Byte modifiedSamples[kModifiedSamplesLength];
     NSInputStream* soundFile = [NSInputStream inputStreamWithFileAtPath:mTalkingPath];
     int bytesRead;
     if (soundFile) {
@@ -110,8 +103,6 @@ float valueOfTextField(UITextField* textField)
         [device flush];
         [soundFile close];
     }
-    free(samples);
-    free(modifiedSamples);
 }
 
 @end

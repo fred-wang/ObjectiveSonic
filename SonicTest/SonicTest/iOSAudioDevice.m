@@ -60,7 +60,7 @@ static const unsigned int kAudioQueueBufferSize = 2048 * 16;
         @synchronized(self) {
             // Initialize the audio format to read linear PCM.
             mAudioFormat.mFormatID = kAudioFormatLinearPCM;
-            mAudioFormat.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;
+            mAudioFormat.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger;
             mAudioFormat.mBitsPerChannel = 8 * sizeof(short);
             mAudioFormat.mChannelsPerFrame = numChannels;
             mAudioFormat.mBytesPerFrame = mAudioFormat.mChannelsPerFrame * mAudioFormat.mBitsPerChannel / 8;
